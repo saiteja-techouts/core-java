@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script>
+             function fizzBuzz()
+             {
+                 var a=1;
+                 var temp=" ";
+                 while(a<=100)
+                 {
+                    
+                     if(a%3==0)
+                     {
+                     temp=temp+document.write(a+"is"+"Fizz"+"<br>")
+                    //document.getElementById("s1").innerHTML=a+"is"+"Fizz";
+                    }
+                     if(a%5==0)
+                    {
+                     temp=temp+document.write(a+"is"+"buzz"+"<br>")
+                    //temp=temp+document.getElementById("s1").innerHTML=a+"is"+"buzz";
+                    }
+                     if(a%3==0&&a%5==0)
+                     {
+                     temp=temp+document.write(a+"is"+"fizzBuzz"+"<br>")
+                     //document.getElementById("s1").innerHTML=a+"is"+"fizzBuzz";
+                     }
+                     a++;
+                 }
+                document.getElementById("s1").innerHTML=temp;
+             }
+        </script>
+    </head>
+    <body>
+        <input type="button" value="FizzBuzz" id="b1" onclick="fizzBuzz()">
+        <span id="s1"></span>
+    </body>
+</html>

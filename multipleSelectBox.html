@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+      <script>
+           s="";
+          var x=()=>{
+              var b=document.getElementById("s1");
+             
+              var x=document.getElementById("dd1");
+
+              for(var i=0;i<x.options.length;i++)
+              {
+                  if(x.options[i].selected==true)
+                  {
+ // If the value property is not specified for an option element, then the text content will be sent to the server when the container form is submitted.
+                    //   b.value+=x.options[i]+" ";
+                      s=s+x.options[i].value+" ";
+                      
+                  }
+              }
+              document.getElementById("s1").innerHTML=s;
+            }
+           
+      </script>
+    </head>
+    <body>
+        <select name="ddl" id="dd1" multiple="multiple">
+            <option value="c">C</option>
+            <option value="c++">C++</option>
+            <option value="java">Java</option>
+            <option value=".net">DotNet</option>
+        </select>
+        <br>
+        <input type="submit" value="Display" onclick="x()" id="b1" >
+        <br>
+        <span id="s1"></span>
+    </body>
+</html>

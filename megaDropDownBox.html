@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+          body{
+              background-color: cyan;
+              text-align: center;
+              position: relative;
+          }
+          ul
+          {
+              background-color: black;
+              text-align: center;
+              /* line-height: 30%; */
+              position: relative;
+          }
+           li{
+               line-height:0px;
+              display: inline-block;
+              margin: 15px;
+              padding: 15px;
+              text-transform: uppercase;
+          }
+          a{
+              color: white;
+              font-weight: bold ;
+              letter-spacing: 3px;
+              font-size: 12px;
+              /* display: block; */
+          }
+           img{
+              width: 250px;
+              height: 180px;               
+          }
+           .subDdl{
+              width: 250px;
+              height: 180px;
+              position: absolute;
+              left: 20%;
+              top: 60px;
+              padding: 25px;
+              display: flex;
+              justify-content: space-around; 
+              visibility: hidden;
+          }
+          ul li:hover{
+              background-color: gray;
+          }
+          ul li:hover a{
+              color: powderblue;
+          }
+          ul li:hover .subDdl{
+              visibility: visible;
+          }
+
+          .spo{
+              width: 250px;
+              height: 180px;
+              position: absolute;
+              right: 30%;
+              top:60px;
+              padding: 24px;
+              justify-content:space-between;
+              visibility: hidden;
+              display: flex;
+          }
+       ul li .s1:hover{
+             background-color: sienna;
+         }
+
+          ul li:hover .spo{ 
+              visibility: visible;
+          }
+          
+        </style>
+    </head>
+    <body>
+        
+        <div>
+            <ul>
+           <li> <a href="#">WebSeries</a>
+            <div class="subDdl">
+
+                <div class="ws">
+                    <img src="../Assets/Suriya.jpg"  alt="WebSeries">
+                    <p>suriya is uncoditional love</p>
+                </div>
+                <div class="ws">
+                    <img src="../Assets/friends.jpg" alt="Friends">
+                    <p>personal lives of six</p>
+                </div>
+
+            </div>
+            </li>
+
+           <li> <a href="#">Sports</a>
+                <div class="spo">
+                    <div class="s1">
+                        <img src="../Assets/sports.jpg" alt="sportsImage">
+                    </div>
+                    <div class="s2">
+                        <img src="../Assets/sports1.jpg" alt="sportsImage">
+                    </div>
+                </div>
+           </li>
+           <li> <a href="#">Movies</a></li>
+        
+           </ul>
+        </div>
+    </body>
+</html>

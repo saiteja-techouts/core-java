@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script>
+            function f1(){
+            var e1={eno:101,ename:"sai",esal:20000};
+            
+            var key, count = 0;
+                
+            // Check if every key has its own property
+            for (key in e1) {
+               // document.write(key);
+                if (e1.hasOwnProperty(key))
+  
+                    // If key is found, add it to total length
+                    
+                    count++;
+            }
+            objectLenght = count;
+  
+            // document.querySelector('.output').textContent
+            //         = objectLenght;
+            document.getElementById("s1").innerHTML=e1.eno+","+e1.ename+","+e1.esal+", objectLength="+objectLenght;
+            
+            }
+        </script>
+    </head>
+    <body>
+        <input type="button" value="PrintObjects" id="b1" onclick="f1()">
+        <br>
+        <span id="s1"></span>
+    </body>
+</html>
